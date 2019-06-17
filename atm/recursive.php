@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * This method takes into account the number of bills
+ */
+
 $bank = [
     [
         'nominal' => 30,
@@ -7,11 +11,11 @@ $bank = [
     ],
     [
         'nominal' => 50,
-        'quantity' => 2,
+        'quantity' => 3,
     ],
     [
         'nominal' => 100,
-        'quantity' => 1,
+        'quantity' => 2,
     ],
     [
         'nominal' => 500,
