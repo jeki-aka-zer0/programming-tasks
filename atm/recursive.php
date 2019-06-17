@@ -33,7 +33,7 @@ function calc(int $sum, array $bank, &$result, int $prevNominal = null): bool
     for ($i = count($bank) - 1; $i >= 0; --$i) {
         $curBill = $bank[$i];
 
-        if ($curBill['quantity'] > 0 && $curBill['nominal'] < $sum && (null === $prevNominal || $curBill['nominal'] < $prevNominal)) {
+        if ($curBill['quantity'] > 0 && $curBill['nominal'] <= $sum && (null === $prevNominal || $curBill['nominal'] < $prevNominal)) {
             $bill = $curBill;
             $billKey = $i;
             $i = -1;
