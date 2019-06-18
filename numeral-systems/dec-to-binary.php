@@ -2,7 +2,7 @@
 
 $decNum = isset($argv[1]) ? (int)$argv[1] : 42;
 
-function divideBy2(string $decNum): string
+function divideBy2(int $decNum): string
 {
     $remStack = new SplStack;
 
