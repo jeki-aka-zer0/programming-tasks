@@ -26,7 +26,7 @@ function parChecker(string $str): bool
                     $balanced = false;
                 }
             }
-        } else {
+        } elseif ($symbol !== ' ') {
             $balanced = false;
         }
 
