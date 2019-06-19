@@ -11,8 +11,7 @@ function bubbleSort(array $list): array
     $counter = 0;
 
     for ($passNum = count($list) - 1; $passNum > 0; $passNum--) {
-        for ($j = 0; $j < $passNum; $j++) {
-            $counter++;
+        for ($j = 0; $j < $passNum; $j++, $counter++) {
             if ($list[$j] > $list[$j + 1]) {
                 $temp = $list[$j];
                 $list[$j] = $list[$j + 1];
